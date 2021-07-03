@@ -686,7 +686,8 @@ gen_ralink_config(int is_soc_ap, int is_aband, int disable_autoscan)
 	fprintf(fp, "CalCacheApply=%d\n", 0);
 	fprintf(fp, "LoadCodeMethod=%d\n", 0);
 	fprintf(fp, "VHT_Sec80_Channel=%d\n", 0);
-	fprintf(fp, "WNMEnable=%d\n", 0);
+	//fprintf(fp, "WNMEnable=%d\n", 0); Eddiks
+	fprintf(fp, "WNMEnable=1;1\n", 0);
 	fprintf(fp, "SKUenable=%d\n", 0); //TODO
 #endif
 #if defined (USE_WID_2G) && USE_WID_2G==7615

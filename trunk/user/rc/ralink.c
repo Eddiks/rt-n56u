@@ -3,7 +3,7 @@
  * modify it under the terms of the GNU General Public License as
  * published by the Free Software Foundation; either version 2 of
  * the License, or (at your option) any later version.
- *
+ *e
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -686,7 +686,7 @@ gen_ralink_config(int is_soc_ap, int is_aband, int disable_autoscan)
 	fprintf(fp, "CalCacheApply=%d\n", 0);
 	fprintf(fp, "LoadCodeMethod=%d\n", 0);
 	fprintf(fp, "VHT_Sec80_Channel=%d\n", 0);
-	fprintf(fp, "WNMEnable=%d\n", 0); Eddiks
+	fprintf(fp, "WNMEnable=%d\n", 0); //Eddiks
 	fprintf(fp, "SKUenable=%d\n", 0); //TODO
 #endif
 #if defined (USE_WID_2G) && USE_WID_2G==7615
